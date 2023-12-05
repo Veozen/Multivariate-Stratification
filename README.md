@@ -9,4 +9,4 @@ The method then attempt to change the strata assignement of each section in turn
 This stratification may be coarse so the method then subdivides each section into smaller subsection which inherit the strata assignement of the section from which they derive. The method is then reapplied on the set of smaller subsections to find refine the stratification.
 The subdivision process is repeated until no significant changes are found.
 
-In essence, the strata assignement applies a local search method where each decision variable is a section of domain that can take a finite number of discrete values(strata). The iterative subdivision process is used to provide a good starting point to the seach applied on the larger number of decision variable at the next subdivision step.
+In essence, the strata assignement applies a local search method where each decision variable is a section of domain that can take a finite number of discrete values(strata). The iterative subdivision process is used to provide a good starting point to the search applied on the larger number of decision variable at the next subdivision step.
