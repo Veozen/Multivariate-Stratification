@@ -41,28 +41,12 @@ DataOut
 			output;
 		end;
 	run;
-
-	data StratCons;
-		%do i = 1 %to &Nstrat;
-			stratId =&i;
-			%do j = 1 %to &nvar;
-				var&j= 10/(2**(&i-1)) ;
-			%end;
-			output;
-		%end;
-	run;
-	data VarCons;
-		%do j = 1 %to &nvar;
-			var&j= 0.1 ;
-		%end;
-		output;
-	run;
 %mend;
 
 
 %Pop(1000,2,3);
 
-
+/*Bivariate Stratification*/
 %MultiVarStrat(	Pop=population , 
 				Nstrat=3,
 				sampleSize=300, 
