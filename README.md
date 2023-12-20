@@ -24,6 +24,8 @@ Exp
 SampleSize
 tol
 DataOut
+	&stratVar List of stratification variables
+	StratID Stratum Identifier for that combination of stratification variable's value
 
 ```
 # Usage  
