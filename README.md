@@ -10,3 +10,16 @@ This stratification may be coarse so the method then subdivides each section int
 The subdivision process is repeated until no significant changes are found.
 
 In essence, the strata assignement applies a local search method where each decision variable is a section of domain that can take a finite number of discrete values(strata). The iterative subdivision process is used to provide a good starting point to the search applied on the larger number of decision variable at the next subdivision step.
+
+```SAS
+%macro MultiVarStrat(Pop= , Nstrat= , stratVar= ,  Objective= Size, Exp=1, SampleSize=, tol=0.01, DataOut=_stratOut );
+Pop
+Nstrat
+stratVar
+Objective
+Exp
+SampleSize
+tol
+DataOut
+
+```
