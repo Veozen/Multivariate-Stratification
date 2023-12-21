@@ -15,13 +15,15 @@ In essence, the strata assignement applies a local search method where each deci
 %macro MultiVarStrat(Pop= , Nstrat= , stratVar= ,  Objective= Size, Exp=1, SampleSize=, tol=0.01, DataOut=_stratOut );
 Pop : File
 	Must variables names in StratVar parameter
-Nstrat  
+Nstrat
+	Number of strata
 stratVar  
 	List of variable names found in Pop file that are to by used for stratification
 Objective  
 	Objective function must be either Variance or CV;
 Exp
 SampleSize
+	total sample size
 tol
 DataOut
 	&stratVar List of stratification variables
