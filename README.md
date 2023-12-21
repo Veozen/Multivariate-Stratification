@@ -53,14 +53,16 @@ DataOut
 
 /*Bivariate Stratification*/
 %MultiVarStrat(	Pop=population , 
-				Nstrat=3,
-				sampleSize=300, 
-				stratVar=var1 var2,
-				Objective=variance,  
-				tol=0.1, 
-				DataOut=Stratified);
+		Nstrat=3,
+		sampleSize=300, 
+		stratVar=var1 var2,
+		Objective=variance,  
+		tol=0.1, 
+		DataOut=Stratified);
 ods html;
-proc sort data=Stratified; by stratId;run;
+proc sort data=Stratified;
+	by stratId;
+run;
 goptions colors=(blue red green);
 goptions colors=(blue red cyan);
 symbol1 value= dot;
