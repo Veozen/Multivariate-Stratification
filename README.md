@@ -28,18 +28,14 @@ In essence, the strata assignement applies a local search method where each deci
 ## Parameters:
 
 ### Input:
-Pop : File
+Pop : File  
 	Must variables names in StratVar parameter  
-Nstrat  
-	Number of strata  
-stratVar  
-	List of variable names found in Pop file that are to by used for stratification  
-Objective   
-	Objective function must be either Variance or CV  
-Exp  
-SampleSize  
-	total sample size  
-tol  
+Nstrat : Number of strata  
+stratVar : List of variable names found in Pop file that are to by used for stratification  
+Objective : Objective function must be either Variance or CV  
+Exp : exponent
+SampleSize : total sample size  
+tol : tolerance
 
 ### Output:
 DataOut
